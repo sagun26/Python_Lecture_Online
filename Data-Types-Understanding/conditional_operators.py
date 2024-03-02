@@ -46,16 +46,6 @@ elif operators=='*':
 Assignment try it out using match and switch as well 
 if not possible please give your reasonings.
 '''
-#match and switch
-user_input  = str(input("Enter your gender: ")).lower()
-
-match user_input:
-    case "male":
-        print("User is male")
-    case "female":
-        print("User is female")
-    case _:
-        print("User is other gender") 
 
 '''
 Take 2 input from user, 
