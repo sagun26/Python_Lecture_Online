@@ -3,7 +3,6 @@ Reverse a String: Write a function that takes a string as input and returns the 
 For example, if the input is "hello", the output should be "olleh".
 '''def reverse(a):
     return a[::-1]
-
 str_rev = reverse('hello')
 print(str_rev)'''
 
