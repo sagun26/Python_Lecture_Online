@@ -48,12 +48,26 @@ def vowelCounter(any):
 
 vowelCounter(u_input3)
 
-
+#Question3: 
 '''
 Check Palindrome: Write a function that checks if a given string is a palindrome. 
 A palindrome is a word, phrase, number, or other sequences of characters that reads the same forward and backward. 
 For example, "radar" is a palindrome.
 '''
+
+u_input4 = input('Enter your text: ')
+
+def checkPalindrome(any):
+  reversedString = ''
+  for x in any:
+    reversedString = x + reversedString
+  if reversedString == any:
+    print(f'{any} is a Palindrome')
+  else:
+    print(f'{any} is not a Palindrome')
+
+checkPalindrome(u_input4)
+
 
 '''
 String Anagrams: Write a function that checks if two strings are anagrams of each other. 
@@ -61,6 +75,7 @@ An anagram is a word or phrase formed by rearranging the letters of a different 
 typically using all the original letters exactly once. 
 For example, "listen" and "silent" are anagrams.
 '''
+
 
 '''
 #Optional Try your best
