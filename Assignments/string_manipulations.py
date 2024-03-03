@@ -68,14 +68,39 @@ def checkPalindrome(any):
 
 checkPalindrome(u_input4)
 
-
+#Question4:
 '''
 String Anagrams: Write a function that checks if two strings are anagrams of each other. 
 An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, 
 typically using all the original letters exactly once. 
 For example, "listen" and "silent" are anagrams.
 '''
+u_input5 = input('Enter your first text: ')
+u_input6 = input('Enter your second text: ')
 
+def checkAnagram(any1, any2):
+  any1 = any1.lower()
+  any2 = any2.lower()
+
+  if len(any1) != len(any2):
+    print(f'{any1} is not an Anagram of {any2}')
+    return
+  
+  charCountAny1 = {}
+  charCountAny2 = {}
+
+  for char in any1 :
+    charCountAny1[char] = any1.count(char)
+
+  for char in any2:
+    charCountAny2[char] = any2.count(char)
+
+  if charCountAny1==charCountAny2:
+    print(f'{any1} is an Anagram of {any2}')
+  else:
+    print(f'{any1} is not an Anagram of {any2}')
+   
+checkAnagram(u_input5, u_input6)
 
 '''
 #Optional Try your best
