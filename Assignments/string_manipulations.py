@@ -1,3 +1,4 @@
+#Question1:
 '''
 Reverse a String: Write a function that takes a string as input and returns the string reversed. 
 For example, if the input is "hello", the output should be "olleh".
@@ -7,8 +8,28 @@ reverse_string_approach_2(any)  -> None (display)
 
 approach 1 using loop
 approach 2 not using loop (look up from internet)
+'''
 
+#Approach 1:
+u_input1 = input('Enter your text: ')
 
+def reverseStringApproach1(any):
+  reversedString = ''
+  for x in any:
+    reversedString = x + reversedString
+  print(f'Reversed string: {reversedString}')
+
+reverseStringApproach1(u_input1)
+ 
+#Approach 2:
+u_input2 = input('Enter your text: ')
+
+def reverseStringApproach2 (str):
+   print(f'Reversed string: {str[::-1]}')
+
+reverseStringApproach2(u_input2)
+
+'''
 Count Vowels in a String: Write a function that takes a string as input and returns the number of vowels (a, e, i, o, u) in the string. 
 For example, if the input is "hello", the output should be 2.
 using loop
