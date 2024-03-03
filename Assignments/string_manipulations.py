@@ -11,6 +11,7 @@ approach 2 not using loop (look up from internet)
 '''
 
 #Approach 1:
+print('REVERSE YOUR TEXT(APPROACH 1)')
 u_input1 = input('Enter your text: ')
 
 def reverseStringApproach1(any):
@@ -22,6 +23,7 @@ def reverseStringApproach1(any):
 reverseStringApproach1(u_input1)
  
 #Approach 2:
+print('REVERSE YOUR TEXT(APPROACH 2)')
 u_input2 = input('Enter your text: ')
 
 def reverseStringApproach2 (str):
@@ -35,6 +37,7 @@ Count Vowels in a String: Write a function that takes a string as input and retu
 For example, if the input is "hello", the output should be 2.
 using loop
 '''
+print('COUNT THE VOWELS IN YOUR TEXT')
 u_input3 = input('Enter your text: ').lower()
 
 def vowelCounter(any):
@@ -54,7 +57,7 @@ Check Palindrome: Write a function that checks if a given string is a palindrome
 A palindrome is a word, phrase, number, or other sequences of characters that reads the same forward and backward. 
 For example, "radar" is a palindrome.
 '''
-
+print('CHECK IF TWO TEXTS ARE PALINDROME')
 u_input4 = input('Enter your text: ')
 
 def checkPalindrome(any):
@@ -75,6 +78,7 @@ An anagram is a word or phrase formed by rearranging the letters of a different 
 typically using all the original letters exactly once. 
 For example, "listen" and "silent" are anagrams.
 '''
+print('CHECK IF THE TWO TEXTS ARE ANAGRAMS')
 u_input5 = input('Enter your first text: ')
 u_input6 = input('Enter your second text: ')
 
@@ -102,9 +106,23 @@ def checkAnagram(any1, any2):
    
 checkAnagram(u_input5, u_input6)
 
+#Question5:
 '''
 #Optional Try your best
 Longest Substring Without Repeating Characters: Given a string, find the length of the longest substring without repeating characters. 
 For example, the longest substring without repeating characters in "abcabcbb" is "abc", 
 which has a length of 3.
 '''
+print('FIND THE LONGEST SUBSTRING WITHOUT REPEATING CHARACTERS')
+u_input7 = input('Enter your text: ')
+
+def longestSubstring(any):
+  substring= ''
+  for char in any:
+    if substring.count(char)==0:
+     substring = substring + char
+    else:
+      pass
+  print(f'The longest substring of the given text is: {substring}')
+
+longestSubstring(u_input7) 
